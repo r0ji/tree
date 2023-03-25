@@ -4,7 +4,7 @@
 DIRECTORY_PATH="."
 OUTPUT_FILE="tree.txt"
 INCLUDE_FILES=false
-MAX_DEPTH=""
+MAX_DEPTH="-maxdepth 3"
 
 print_help() {
     echo "Usage: $0 [OPTIONS]"
@@ -14,7 +14,7 @@ print_help() {
     echo "  -i, --input    Directory path to analyze (default: current directory)"
     echo "  -o, --output   Output file for the directory structure (default: tree.txt)"
     echo "  -f, --files    Include files in the directory structure (default: only directories)"
-    echo "  -d, --depth    Maximum depth for the directory structure (default: full depth)"
+    echo "  -d, --depth    Maximum depth for the directory structure (default: 3)"
     echo "  -h, --help     Display this help message"
     echo
     echo "Examples:"
